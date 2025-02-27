@@ -70,13 +70,13 @@
 <body>
     <div class="container">
         <div class="editor">
-            <textarea id="htmlInput" placeholder="Type your text here..."></textarea>
+            <textarea id="htmlInput" placeholder="Type your text here..." autocomplete="off"></textarea>
         </div>
     </div>
     <div class="controls">
         <button onclick="document.getElementById('fileInput').click()">Upload</button>
         <input type="file" id="fileInput" style="display:none" accept=".txt,.html" onchange="loadFile(event)">
-        <input type="text" id="filename" placeholder="Filename" value="document.txt">
+        <input type="text" id="filename" placeholder="Filename" value="document.txt" autocomplete="off">
         <button onclick="downloadCode()">Download</button>
     </div>
 
